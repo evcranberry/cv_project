@@ -65,8 +65,8 @@ if uploaded_file is not None:
         if model is not None:
             if image.mode == "RGBA":
                 image = image.convert("RGB")
-                image_tensor = transform(image)
-                image_tensor = image_tensor.unsqueeze(0)
+            image_tensor = transform(image)
+            image_tensor = image_tensor.unsqueeze(0)
             if model is not None:
                 with torch.no_grad():
                     outputs = model(image_tensor)
