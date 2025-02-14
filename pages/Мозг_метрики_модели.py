@@ -2,6 +2,8 @@ import streamlit as st
 
 st.logo('./images/stonks.jpg', icon_image='./images/up.png', size='large')
 
+st.title('Метрики моделей детекции опухолей головного мозга')
+
 def display_model_info(model_type):
     st.write(f'### Процесс обучения модели: {model_type}')
     st.image(f'images/{model_type}/results.png')

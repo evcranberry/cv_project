@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Метрики модели')
+st.title('Метрики модели детекции лиц')
 metric_options = ['F1-метрика', 'Confusion matrix', 'Confusion matrix нормализованная', 'Precision', 'PR', 'Recall', 'Labels', 'Labels correlogram']
 selected_metric = st.selectbox("Выберите метрику:", metric_options)
 
