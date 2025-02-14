@@ -5,6 +5,7 @@ from ultralytics import YOLO
 import requests
 import io
 
+st.page_link('pages/Лица_метрики.py', label='Узнать детали обучения модели')
 
 @st.cache_resource
 def load_model():
